@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <meta name="author" content="Ying Peng" />
+    <meta name="description" content="A TODO webpage for mobile phones implemented with native HTML/CSS/JS." />
+
+    <title>TODO by Ying Peng</title>
+
+    <script type="text/javascript" src="native/js/util.js"></script>
+    <script type="text/javascript" src="native/js/todoMVC.js"></script>
+    <script type="text/javascript" src="native/js/button.js"></script>
+    <script type="text/javascript" src="native/js/todo.js"></script>
+    <script type="text/javascript" src="native/js/popup.js"></script>
+    <script type="text/javascript" src="native/js/model.js"></script>
+    <script type="text/javascript" src="native/js/storage.js"></script>
+    
+    <link rel="stylesheet" href="native/css/todoMVC.css">
+    <link rel="stylesheet" href="native/css/headText.css">
+    <link rel="stylesheet" href="native/css/button.css">
+    <link rel="stylesheet" href="native/css/todo.css">
+    <link rel="stylesheet" href="native/css/popup.css">
+    <link rel="stylesheet" href="native/css/bubble.css">
+</head>
+<body>
+    <script>
+        /* 获取元素 */
+        var card = document.querySelector('*');
+         /* 绑定点击事件 */
+        card.addEventListener('click',function(e){
+             /* 获取鼠标点击的水平位置 */
+            let x = e.clientX - this.offsetLeft;
+            /* 获取鼠标点击的垂直位置 */
+            let y = e.clientY - this.offsetTop;
+             /* 创建一个span元素 */
+            let circle = document.createElement('spanning');
+            /* 为span元素添加定位的 left 属性 */
+            circle.style.left = x + 'px';
+             /* 为span元素添加定位的 top 属性 */
+            circle.style.top = y + 'px';
+             /* 卡片添加创建好的span元素 */
+            card.appendChild(circle);
+            /* 1s后移除span元素 */
+            setInterval(function(){
+                circle.remove();
+            },1000)
+
+        })
+
+   </script>
+     <div class="kuang">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+    <div id="app">
+        <!-- Full View Background -->
+        <div id="bg" class="bg"></div>
+
+        <!-- Todo title & Function Bar with Counter -->
+        <header id="header">
+            <div class="HeaderGroup">
+                <h1 class="diyi">TODO</h1>
+                <h1 class="dier">TODO</h1><!--滑动波纹效果-->
+            </div>
+            <div class="HeaderSubGroup">
+                <span id="todo-counter">1 todo left</span>
+                <ul class="tools" id="tools">
+                    <li><button>全部完成</button></li>
+                    <li><button>清空已完成</button></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Float Function Button -->
+        <div class="float-btns">
+            <input type="checkbox" id="ButtonGroup-click">
+            <label id="btn-group" for="ButtonGroup-click" class="ButtonGroup">
+                <i class="iconfont">add</i><!--添加todo的按钮-->
+                <div id="filters" class="filters">
+                    <a><i class="iconfont">all</i></a><!--三个过滤器-->
+                    <a><i class="iconfont">active</i></a>
+                    <a><i class="iconfont">done</i></a>
+                </div>
+                
+            </label>
+        </div>
+        
+        <!-- Todo family -->
+        <div class="todos" id="todos">
+        </div>
+
+        <!-- Full View Pop-up Box长按添加一条todo -->
+        <div id="popup-box" class="popup-box">
+            <div class="quan">
+                <div class="shui"></div>
+              </div>
+            <h2>Add a new TODO</h2>
+            <input id="todo-input" type="text" placeholder="Write down a TODO" autofocus>
+            <div class="InputBtnGroup">
+                <button class="rubber-band"href="#">ADD</button>
+                <button class="rubber-band" href="#">QUIT</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

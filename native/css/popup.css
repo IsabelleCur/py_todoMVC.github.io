@@ -1,0 +1,168 @@
+.popup-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: rgba(0,0,0,0.85);
+    opacity: 0;
+    z-index: -1;
+    /*居中排列*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*渐变*/
+    transition: 1.5s cubic-bezier(0.2,0.8,0.2,1);
+}
+
+.popup-box h2 {
+    /*渐变*/
+    background: linear-gradient(104deg, #3c3cdd 0%, #99d0e0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 20px auto;
+}
+
+.popup-box input {
+    /*输入框*/
+    width: 80%;
+    height: 30px;
+    margin: 20px auto;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    padding: 3px;
+}
+/*水波特效*/
+.quan{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 30px;
+    /*背景色和整个背景一致*/
+    border: 3px solid rgba(0, 0, 0,0.85);
+    box-shadow: 0 0 0 3px rgb(41, 134, 196);
+   
+}
+.shui{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(23, 106, 201);
+    border-radius: 50%;
+    overflow: hidden;
+}
+.shui::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 150%;
+    height: 150%;   
+    border-radius: 40%;
+    background-color: rgba(0, 0, 0,0.85);
+    animation: shi 5s linear infinite;
+    
+}
+@keyframes shi{
+    0%{
+        transform: translate(-50%,-65%) rotate(0deg);
+       
+    }
+    100%{
+        transform: translate(-50%,-65%) rotate(360deg); 
+      
+    }
+}
+.shui::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 150%;
+    height: 150%;   
+    border-radius: 42%;
+    background-color: rgb(240, 228, 228,0.2);
+    animation: xu 7s linear infinite;
+    
+}
+@keyframes xu{
+    0%{
+        transform: translate(-50%,-60%) rotate(0deg);
+       
+    }
+    100%{
+        transform: translate(-50%,-60%) rotate(360deg); 
+      
+    }
+}
+/*输入后的两个按钮*/
+.InputBtnGroup button {
+    position: relative;
+    display: inline-block;;
+    padding: 10px 15px;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    overflow: hidden;
+    outline: none;
+    border: none;
+}
+
+.InputBtnGroup button:nth-child(1){
+    background-color: #0162c8;
+    
+}
+.InputBtnGroup button:nth-child(2) {
+    background-color: #423fec;
+    
+}
+/*按下按钮时的动画效果*/
+@keyframes rubberBandAnimation {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    35% {
+        transform: scale3d(1.15, .85, 1);
+    }
+    45% {
+        transform: scale3d(.75, 1, 1);
+    }
+    60% {
+        transform: scale3d(1.0, 1.15, 1);
+    }
+    75% {
+        transform: scale3d(1.10, .90, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.popup-box h2 {
+    background: linear-gradient(104deg, #123597, #97ABFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.popup-box input {
+    border: #333;
+    background-color: #555;
+    color: white;
+}
+
+.InputBtnGroup button {
+    color: rgba(255, 255, 255, 0.5);
+}
+.InputBtnGroup button:active {
+    color: rgba(255, 255, 255, 0.8);
+}
+
