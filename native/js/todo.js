@@ -120,7 +120,7 @@ function initTodo(elem, index) {
             var horizontalOffset = freshTouch.clientX - oldTouch.clientX;
             touchObj.style.transition = ".2s linear";
 
-            if (Math.abs(horizontalOffset) < deviceWidth / 3) {     //移动距离过短时不算做左滑/右滑：不判定为删除
+            if (Math.abs(horizontalOffset) < deviceWidth / 4) {     //移动距离过短时不算做左滑/右滑：不判定为删除
                 touchObj.style.left = horizontalOffset + 'px';
             } else {
                 if (horizontalOffset < 0) {     //left

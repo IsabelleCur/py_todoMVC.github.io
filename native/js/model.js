@@ -6,7 +6,7 @@ window.model = {
     data: {
         todos: [
             /**
-             * 【存储实例】
+             * Todo MODEL：存储实例
              */
         ],
         filter: "All",
