@@ -141,7 +141,8 @@
     }
 })();
 ```
-
+	
+<br/>
 
 ### MVC架构——Model
 
@@ -162,6 +163,7 @@ window.model = {
 }	 
 ```
 
+<br/>
 
 ### 事件监听
 
@@ -205,7 +207,7 @@ window.model = {
 
 #### 左滑/右滑判定
 
-···js
+```js
         if (Math.abs(verticalOffset) < tolerateVerticalOffset) {    // 上下滑动误差之内视作成功
             var horizontalOffset = freshTouch.clientX - oldTouch.clientX;
             touchObj.style.transition = ".2s linear";
@@ -222,6 +224,8 @@ window.model = {
             }
 ```
 
+<br/>					 
+					 
 ### 气泡Todo
 
 样式结构（项目中桥todo为动态生成）
@@ -300,7 +304,8 @@ touchend
     }, false);
 ```
 
-
+<br/>
+					 
 ### 打造深海场景
 
 ####点击时的涟漪
@@ -372,7 +377,7 @@ var card = document.querySelector('*');
     }
 ```
 	
-
+<br/>
 	
 ### 气泡浮动球功能按钮
 
@@ -417,7 +422,7 @@ var card = document.querySelector('*');
 
 </details>
 
-
+<br/>
 
 ## 开发环境
 
