@@ -25,27 +25,26 @@
 </head>
 <body>
     <script>
-        /* 获取元素 */
-        var card = document.querySelector('*');
-         /* 绑定点击事件 */
-        card.addEventListener('click',function(e){
-             /* 获取鼠标点击的水平位置 */
+        /* get elem */
+        var whole_page = document.querySelector('*');
+         /* bound click */
+         whole_page.addEventListener('click',function(e){
+             /* horizontal position */
             let x = e.clientX - this.offsetLeft;
-            /* 获取鼠标点击的垂直位置 */
+            /* vertical position */
             let y = e.clientY - this.offsetTop;
-             /* 创建一个span元素 */
+             /* create spanning */
             let circle = document.createElement('spanning');
-            /* 为span元素添加定位的 left 属性 */
+            /* add left */
             circle.style.left = x + 'px';
-             /* 为span元素添加定位的 top 属性 */
+             /* add top attribute */
             circle.style.top = y + 'px';
-             /* 卡片添加创建好的span元素 */
-            card.appendChild(circle);
-            /* 1s后移除span元素 */
+             /* append spanning */
+            whole_page.appendChild(circle);
+            /* remove spanning after 1s */
             setInterval(function(){
                 circle.remove();
             },1000)
-
         })
 
    </script>
@@ -69,7 +68,7 @@
         <header id="header">
             <div class="HeaderGroup">
                 <h1 class="diyi">TODO</h1>
-                <h1 class="dier">TODO</h1><!--滑动波纹效果-->
+                <h1 class="dier">TODO</h1><!--波浪效果-->
             </div>
             <div class="HeaderSubGroup">
                 <span id="todo-counter">1 todo left</span>
