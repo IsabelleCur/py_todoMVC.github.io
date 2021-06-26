@@ -311,9 +311,10 @@ touchend
 #### 点击时的涟漪
 
 ```js
-var card = document.querySelector('*');
+        /* get elem */
+        var whole_page = document.querySelector('*');
          /* bound click */
-        card.addEventListener('click',function(e){
+         whole_page.addEventListener('click',function(e){
              /* horizontal position */
             let x = e.clientX - this.offsetLeft;
             /* vertical position */
@@ -325,12 +326,11 @@ var card = document.querySelector('*');
              /* add top attribute */
             circle.style.top = y + 'px';
              /* append spanning */
-            card.appendChild(circle);
+            whole_page.appendChild(circle);
             /* remove spanning after 1s */
             setInterval(function(){
                 circle.remove();
             },1000)
-
         })
 ```
 
