@@ -421,18 +421,6 @@ touchend
 <br/>
 
 ## 附录
-	
-### 开发环境
-
-- **操作系统**
-  - **开发环境**：macOS Catalina
-- **测试环境**: 
-  - Chrome Device Simulator
-- **IDE**：Visual Studio Code
-- **开发语言**
-  - HTML5
-  - CSS3
-  - JavaScript
 
 ### 作者
 
