@@ -53,7 +53,7 @@
 
 **高级功能**
 
-- 提供三种条件过滤todo列表 (All / Active / Finished)
+- 提供三种条件过滤todo列表 (All / Active / Done)
 - 双击可编辑todo列表中已创建的单条todo
 
 **创意交互和其他功能**
