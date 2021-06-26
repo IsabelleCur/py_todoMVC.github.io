@@ -75,7 +75,7 @@
 
 ## 功能演示
 
-气泡todo的功能；全部完成；全部未完成；
+气泡todo的功能；全部完成；全部未完成
 
 <img src="imgDoc/all_comp.png" width="33%;" /><img src="imgDoc/no_comp.png" width="33%;" />
 
