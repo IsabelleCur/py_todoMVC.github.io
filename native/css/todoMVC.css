@@ -49,16 +49,16 @@ html {
     z-index: -1;
 }
 
-@media (prefers-color-scheme: dark) {
-    .bg {
+
+.bg {
         
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         filter: blur(3px);
-    }
-    
 }
+    
+
 
 .bg {
     background-repeat: no-repeat;
