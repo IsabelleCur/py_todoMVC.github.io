@@ -38,7 +38,7 @@
 
 1.	[TodoMVC](http://todomvc.com/)：这是一个开源项目，实现了一个 Todo Application，广泛用于 `MV*` 框架的选择。
 
-2.	[doubleZ0108/TodoMVC](https://github.com/doubleZ0108/TodoMVC): TodoMVC示例。
+2.	[luics/web-dev](https://github.com/luics/web-dev): TodoMVC示例。
 
 ## 功能介绍
 
