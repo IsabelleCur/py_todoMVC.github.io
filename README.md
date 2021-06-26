@@ -1,8 +1,8 @@
 # TodoMVC
 
-[Ying Peng's TodoMVC](http://server.doublez.site:5000/TodoMVC)
+[Ying Peng's TodoMVC](https://isabellecur.github.io/py_todoMVC.github.io/)
 
-[github仓库](https://github.com/doubleZ0108/TodoMVC)
+[github仓库](https://github.com/IsabelleCur/py_todoMVC.github.io/)
 
 
 <p align="right">1853287 彭颖</p>
