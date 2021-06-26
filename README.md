@@ -446,31 +446,3 @@ touchend
 | **Course Name** | 脚本程序设计                                       |
 | **Email**       | [1285524452@qq.com](mailto:1285524452@qq.com) |
 
-<br/>
-
-## 项目结构
-
-```
-.
-├── README.md
-├── imgDoc
-├── TodoMVC.html
-└── native
-    ├── css
-    │   ├── todoMVC.css
-    │   ├── button.css
-    │   ├── bubble.css
-    │   ├── headText.css
-    │   ├── popup.css
-    │   └── todo.css
-    └── js
-        ├── todoMVC.js
-        ├── button.js
-        ├── model.js
-        ├── popup.js
-        ├── storage.js
-        ├── todo.js
-        └── util.js
-
-```
-
