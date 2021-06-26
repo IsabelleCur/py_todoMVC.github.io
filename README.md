@@ -142,7 +142,6 @@
 })();
 ```
 
-<br/>
 
 ### MVC架构——Model
 
@@ -163,7 +162,6 @@ window.model = {
 }	 
 ```
 
-<br/>
 
 ### 事件监听
 
@@ -224,11 +222,9 @@ window.model = {
             }
 ```
 
-<br/>
-
 ### 气泡Todo
 
-样式结构
+样式结构（项目中桥todo为动态生成）
 
 ```html
 <div class="todo-group" id="todo-1">
@@ -245,7 +241,6 @@ window.model = {
     </div>
 </div>
 ```
-
 
 touchstart
 
@@ -306,9 +301,6 @@ touchend
 ```
 
 
-
-<br/>
-
 ### 打造深海场景
 
 ####点击时的涟漪
@@ -360,9 +352,11 @@ var card = document.querySelector('*');
             }
         }
 ```
+	
 ####动态波浪文字
 
 要点：通过clip-path裁剪只显示部分区域，不同时间裁剪不同内容就形成动态效果：
+	
 
 ```css
  @keyframes move{
@@ -377,8 +371,9 @@ var card = document.querySelector('*');
         }
     }
 ```
-<br/>
+	
 
+	
 ### 气泡浮动球功能按钮
 
 ####拖动气泡浮动球
@@ -423,7 +418,6 @@ var card = document.querySelector('*');
 </details>
 
 
-<br/>
 
 ## 开发环境
 
