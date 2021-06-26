@@ -308,7 +308,7 @@ touchend
 					 
 ### 打造深海场景
 
-####点击时的涟漪
+#### 点击时的涟漪
 
 ```js
 var card = document.querySelector('*');
@@ -334,7 +334,7 @@ var card = document.querySelector('*');
         })
 ```
 
-####漂浮的气泡
+#### 漂浮的气泡
 
 要点：定义动画
 
@@ -358,7 +358,7 @@ var card = document.querySelector('*');
         }
 ```
 	
-####动态波浪文字
+#### 动态波浪文字
 
 要点：通过clip-path裁剪只显示部分区域，不同时间裁剪不同内容就形成动态效果：
 	
