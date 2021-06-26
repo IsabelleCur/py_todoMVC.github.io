@@ -183,7 +183,7 @@ window.model = {
             click_counter = 0;
         }, dbltouch_interval);
         if (click_counter > 1) {
-            console.log("simulate double touch on mobile...");
+            console.log("implement double click on mobile device");
 
             click_counter = 0;
     	}
