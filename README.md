@@ -381,7 +381,7 @@ var card = document.querySelector('*');
 	
 ### 气泡浮动球功能按钮
 
-####拖动气泡浮动球
+#### 拖动气泡浮动球
 
 
 ```js
