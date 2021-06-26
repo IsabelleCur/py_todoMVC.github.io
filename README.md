@@ -391,13 +391,11 @@ touchend
         start: function(event){
             touchStartTimer = new Date();
             event.preventDefault();
-            $('ButtonGroup-click').checked = !$('ButtonGroup-click').checked; 
             oldTouch = event.touches[0];
         },
         move: function(event){
             event.preventDefault();
             touchStartTimer = new Date();
-            $('ButtonGroup-click').checked = false;
 
             let freshTouch = event.touches[0];
 
